@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Assinantes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Assine a KinoBox!</h1>
+        <p> Todo mês, uma curadoria cinematográfica única na sua casa! A KinoBox é uma caixa temática com <strong>filmes digitais, zines exclusivos, itens de colecionador e snacks inspirados em obras do cinema mundial</strong>.
+        </p>
+        <p>
+            Preencha o fomulário abaixo para se cadastrar e receba as novidades e edições futuras da nossa experiência cinéfila.
+        </p>
+
+        <form id="cadastroForm">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" maxlenght="9" required>
+            
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+
+            <label for="tamanho">Tamanho da camiseta:</label>
+            <select id="tamanho" name="tamanho">
+                <option value="">Selecione</option>
+                <option value="PP">PP</option>
+                <option value="P">P</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+                <option value="GG">GG</option>
+            </select>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    
+</body>
+</html>
